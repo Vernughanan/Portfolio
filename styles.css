@@ -125,4 +125,4 @@ body{
   --input-placeholder:rgba(11,18,32,0.45);
   --input-focus:0 0 0 4px rgba(106,130,251,0.12);
 }
-body.light{background:linear-gradient(180deg,#f8fafc,#eef2f8)}
+body.light{background:linear-gradient(180deg,#f8fafc,#c7d3e4)}
