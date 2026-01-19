@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Professional Portfolio — Vernughanan Jegatheeswaran</title>
+  <meta name="description" content="Professional portfolio showcasing projects, skills and contact information." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Vernughanan Jegatheeswaran</a>
+      <button id="navToggle" class="nav-toggle" aria-label="Open navigation">☰</button>
+      <nav class="nav" id="mainNav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+  <a class="btn small" href="assets/J.VERNUGHANAN Resume.pdf" download aria-label="Download CV">Download CV</a>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hello, I'm <span class="accent">Vernughanan</span></h1>
+          <p class="lead">Full Stack developer building accessible, performant web experiences.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#projects">See my work</a>
+            <a class="btn ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="assets/ProfilePic.jpeg" alt="Portrait of Vernughanan" class="avatar-img">
+        </div>
+      </div>
+    </section>
+
+    <section class="container about" id="about">
+      <h2>About</h2>
+      <p>I design and build front-end and back-end applications with a focus on accessibility and performance. I enjoy turning ideas into clean, maintainable code and collaborating with teams to deliver valuable products.</p>
+      <ul class="meta-list">
+        <li><strong>Location:</strong> Colombo, Sri Lanka</li>
+        <li><strong>Role:</strong> Full-Stack Developer</li>
+        <li><strong>Availability:</strong> Open to opportunities</li>
+      </ul>
+    </section>
+
+    <section class="container projects" id="projects">
+      <h2>Selected Projects</h2>
+      <div class="grid">
+        <article class="card project" data-title="Project Atlas" data-desc="A beautiful bakery website." data-link="#">
+          <div class="thumb">
+            <div class="image-bg"> <img src="assets/bakery.jpg" alt="Bakery"></div>
+          </div>
+          <div class="card-body">
+            <h3>Project Bakery</h3>
+            <p>Fully developed front-end.</p>
+            <div class="card-actions">
+              <button class="btn small viewProject">View</button>
+              <a class="btn small ghost" href="https://github.com/Vernughanan/WT-Bakery-Group-4.git">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project" data-title="Stellar Shop" data-desc="A smooth car race game." data-link="#">
+          <div class="thumb">
+            <div class="image-bg"> <img src="assets/CarRace.jpg" alt="car3D"></div>
+          </div>
+          <div class="card-body">
+            <h3>3D Car Race Game</h3>
+            <p>A Car race game for Mobile and PC users.</p>
+            <div class="card-actions">
+              <button class="btn small viewProject">View</button>
+              <a class="btn small ghost" href="https://github.com/Vernughanan/Car-Game-2.git">Live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project" data-title="Aurora Blog" data-desc="A lightweight static application for LMS." data-link="#">
+          <div class="thumb">
+            <div class="image-bg"><img src="assets/library.jpg" alt="Library"></div>
+          </div>
+          <div class="card-body">
+            <h3>Library Management System</h3>
+            <p>Ongoing Project</p>
+            <div class="card-actions">
+              <button class="btn small viewProject">View</button>
+              <a class="btn small ghost" href="#">Source</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container skills" id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5 & React </li>
+        <li>CSS3, Flexbox & Grid</li>
+        <li>Game Development C#</li>
+        <li>Vanilla JavaScript (ES6+)</li>
+        <li>Machine Learning and AI Python</li>
+      </ul>
+    </section>
+
+    <section class="container contact" id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to work together or say hi, send a short message:</p>
+      <form id="contactForm" class="contact-form">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button class="btn" type="submit">Send message</button>
+          <a class="btn ghost" href="mailto:hello@example.com">Or email me</a>
+        </div>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Vernughanan Jegatheeswaran — Built with HTML, CSS & JavaScript</p>
+      <nav class="social">
+        <a href="https://github.com/Vernughanan" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/vernughanan-jegatheeswaran-76a518367?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Project modal -->
+  <div id="projectModal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <h3 id="modalTitle">Project Title</h3>
+      <p id="modalDesc">Project description</p>
+      <a id="modalLink" class="btn" href="#">Open project</a>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
