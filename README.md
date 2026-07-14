@@ -1,8 +1,7 @@
 Professional Portfolio — HTML/CSS/JS
 
 Live Demo 
-
-vernuportfolio.netlify.app
+[My Portfolio](vernuportfolio.netlify.app)
 
 How to view
 
