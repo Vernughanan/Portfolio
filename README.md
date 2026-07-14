@@ -1,5 +1,9 @@
 Professional Portfolio — HTML/CSS/JS
 
+Live Demo 
+
+vernuportfolio.netlify.app
+
 How to view
 
 1. Open `index.html` in your browser (double-click or use Live Server extension).
